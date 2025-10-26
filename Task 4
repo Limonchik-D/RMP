@@ -1,0 +1,4 @@
+в файле с задания Task 3, перейти в папку с проектом cd D:\Projects\navigation-app  
+Удалить папку вручную с именем node_modules и желательно package-lock.json
+ввести в терминале npm install
+затем запуск npx expo start
