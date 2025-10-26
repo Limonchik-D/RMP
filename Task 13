@@ -1,0 +1,52 @@
+Готовый проект: https://snack.expo.dev/@david7_7/task-13
+
+Если ссылка не работает, создай проект в снеке, переименнуй .jx  в .tsx, 
+создай папку Header.tsx и втсавь туда код:
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+const Header: React.FC = () => {
+  return (
+    <View style={styles.header}>
+      <Text style={styles.text}>Главная страница</Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  header: {
+    width: '100%',
+    padding: 20,
+    backgroundColor: '#f8f8f8',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  text: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+});
+
+export default Header;
+
+***********************************
+затем в папку  App.tsx втсавь код:
+
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import Header from './Header';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Header />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+});
