@@ -1,0 +1,4 @@
+Клонировать репозиторий или скачать файл https://github.com/filin2009/rn_flexboxfroggy.git
+Открыть в визуал студио код
+в терминалле написать npm install
+После установки написать: npx expo start
