@@ -1,0 +1,43 @@
+Готовый файл: https://snack.expo.dev/@david7_7/task-11
+
+если не работает, создайте работу в снеке, переименуйте основной файл в .tsx и втсавьте код:
+import React, { useState } from 'react';
+import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
+
+export default function App() {
+  // Создаем состояние data типа string и функцию setData
+  const [data, setData] = useState<string>('');
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Текущий текст: {data}</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Введите текст"
+        value={data}
+        onChangeText={setData} // Обновляем data при вводе
+      />
+      <Button title="Очистить" onPress={() => setData('')} />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    gap: 20,
+  },
+  text: {
+    fontSize: 20,
+  },
+  input: {
+    width: '80%',
+    padding: 10,
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 5,
+  },
+});
