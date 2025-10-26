@@ -1,0 +1,5 @@
+Открыть в выбранной папке терминал и ввести команду: npx create-expo-app navigation-app --template
+затем ввести команду cd navigation-app
+Установите библиотеку @react-navigation/native: npm install @react-navigation/native
+Установите зависимости для Expo: npx expo install react-native-screens react-native-safe-area-context
+запуск: npx expo start
