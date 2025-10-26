@@ -1,0 +1,42 @@
+Готовый проект: https://snack.expo.dev/@david7_7/task-12
+
+Если не работает ссылка, создайте проект в снеке, переименуйте основной файл в .tsx и вставьте код:
+import React, { useState } from 'react';
+import { StyleSheet, Text, Button, View } from 'react-native';
+
+export default function App() {
+  // Создаем состояние для хранения текста о нажатой кнопке
+  const [pressedButton, setPressedButton] = useState<string>('');
+
+  return (
+    <View style={styles.container}>
+      <Button
+        title="Кнопка1"
+        onPress={() => setPressedButton('Нажата кнопка1')}
+      />
+      <Button
+        title="Кнопка2"
+        onPress={() => setPressedButton('Нажата кнопка2')}
+      />
+      <Button
+        title="Кнопка3"
+        onPress={() => setPressedButton('Нажата кнопка3')}
+      />
+      <Text style={styles.text}>{pressedButton}</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    gap: 20, // Расстояние между кнопками и текстом
+  },
+  text: {
+    fontSize: 20,
+    marginTop: 20,
+  },
+});
