@@ -1,0 +1,26 @@
+готовый: https://snack.expo.dev/@david7_7/task-9
+
+если не работает то вот готовый код для снека:
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <View style={[styles.stripe, { backgroundColor: 'red', height: 90 }]} />
+      <View style={[styles.stripe, { backgroundColor: 'green', height: 90 }]} />
+      <View style={[styles.stripe, { backgroundColor: 'red', height: 90 }]} />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: '#fff',
+  },
+  stripe: {
+    width: '100%', // Полосы занимают всю ширину экрана
+  },
+});
