@@ -2,3 +2,8 @@
 Удалить папку вручную с именем node_modules и желательно package-lock.json
 ввести в терминале npm install
 затем запуск npx expo start
+
+
+Если возникают ошибки (например, "npm ERR!" или несовместимость версий), попробуй очистить кэш npm:
+npm cache clean --force
+npm install
