@@ -1,0 +1,29 @@
+Готовое: https://snack.expo.dev/@david7_7/task-7
+
+если не работает: создать проект в снеке переименовать app.js на .tsx и вставить код:
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <View style={[styles.square, { backgroundColor: 'gold' }]} />
+      <View style={[styles.square, { backgroundColor: 'gray' }]} />
+      <View style={[styles.square, { backgroundColor: 'green' }]} />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#fff',
+    gap: 20, // Расстояние между квадратами
+  },
+  square: {
+    width: 50,
+    height: 50,
+  },
+});
